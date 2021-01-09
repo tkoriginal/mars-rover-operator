@@ -1,0 +1,27 @@
+{
+  "name": "mar-rover-operator",
+  "version": "0.0.1",
+  "description": "A script to land and operator the mars rover on a grid ",
+  "main": "index.js",
+  "bin": {
+    "rover-cli": "index.js"
+  },
+  "scripts": {
+    "test": "jest index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkoriginal/mars-rover-operator.git"
+  },
+  "keywords": [
+    "mars",
+    "rover",
+    "browze"
+  ],
+  "author": "Tauqueer Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkoriginal/mars-rover-operator/issues"
+  },
+  "homepage": "https://github.com/tkoriginal/mars-rover-operator#readme"
+}
