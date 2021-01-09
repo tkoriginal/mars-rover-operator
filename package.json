@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/tkoriginal/mars-rover-operator/issues"
   },
-  "homepage": "https://github.com/tkoriginal/mars-rover-operator#readme"
+  "homepage": "https://github.com/tkoriginal/mars-rover-operator#readme",
+  "dependencies": {
+    "cli-welcome": "^2.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }

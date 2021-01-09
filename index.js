@@ -5,7 +5,6 @@ const chalk = require('chalk')
 
 const { version, description } = require('./package.json')
 
-const brandColor = (color, inverse) => (inverse ? chalk.hex(color).inverse.bold : chalk.bgHex(color).bold)
 
 const run = () => {
   // Alerts
