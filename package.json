@@ -1,5 +1,5 @@
 {
-  "name": "mar-rover-operator",
+  "name": "mars-rover-cli",
   "version": "0.0.1",
   "description": "A script to land and operator the mars rover on a grid ",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "rover-cli": "index.js"
   },
   "scripts": {
-    "test": "jest index.js"
+    "test": "jest index.js",
+    "format": "prettier --write \"./**/*.{js, json}\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
     "mars",
     "rover",
     "browze"
+  ],
+  "files": [
+    "index.js",
+    "utils/*"
   ],
   "author": "Tauqueer Khan",
   "license": "ISC",
