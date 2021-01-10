@@ -21,7 +21,8 @@
   ],
   "files": [
     "index.js",
-    "utils/*"
+    "utils/*",
+    "schema/*"
   ],
   "author": "Tauqueer Khan",
   "license": "ISC",
