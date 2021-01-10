@@ -1,6 +1,9 @@
 const fs = require('fs');
 const readline = require('readline');
 
+const SchemaValidator = require('./schema-validator')
+const roversSchema = require('../schema/rover-schema.json')
+
 module.exports = async function textFileToJson(fileLocation) {
 	const configuration = {
 		plateau: [],
@@ -47,7 +50,10 @@ module.exports = async function textFileToJson(fileLocation) {
 			};
 		}
 	}
-	configuration.rovers = transformRoversDataToArray(roversData);
+    configuration.rovers = transformRoversDataToArray(roversData);
+    
+    const validateSchema = new SchemaValidator()
+    validateSchema.validate(configuration, roversSchema)
 	return configuration;
 };
 

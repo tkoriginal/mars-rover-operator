@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/tkoriginal/mars-rover-operator#readme",
   "dependencies": {
+    "ajv": "^7.0.3",
     "cli-welcome": "^2.2.2"
   },
   "devDependencies": {
