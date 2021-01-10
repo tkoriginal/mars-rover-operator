@@ -4,7 +4,7 @@
   "description": "A script to land and operator the mars rover on a grid ",
   "main": "index.js",
   "bin": {
-    "rover-cli": "index.js"
+    "mars-rover-cli": "index.js"
   },
   "scripts": {
     "test": "jest",
