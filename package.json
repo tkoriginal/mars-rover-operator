@@ -1,6 +1,6 @@
 {
   "name": "mars-rover-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A script to land and operator the mars rover on a grid ",
   "main": "index.js",
   "bin": {
