@@ -7,7 +7,7 @@ const path = require('path')
 const { validTextFile } = require('./utils/utils');
 const textFileToJson = require('./utils/text-file-processor')
 // const { version, description } = require('./package.json');
-
+const roverManager = require('./utils/roverManager')
 // // Alerts
 // const success = chalk.green.inverse;
 // const info = chalk.blue.inverse;
@@ -21,8 +21,8 @@ const main = async () => {
 	const fileLocation = path.join(__dirname, process.argv[2]);
 	validTextFile(fileLocation);
 	const roverConfiguration = await textFileToJson(fileLocation)
-	console.log(roverConfiguration)
-	
+	const finalRoverLocationData = roverManager(roverConfiguration)
+	finalRoverLocationData.forEach(locationData => console.log(locationData))
 };
 
 main();
