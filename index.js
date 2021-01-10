@@ -2,7 +2,7 @@
 
 const path = require('path')
 
-const { validTextFile } = require('./utils/validTextFile');
+const validTextFile = require('./utils/validTextFile');
 const textFileToJson = require('./utils/text-file-processor')
 const roverManager = require('./utils/roverManager')
 

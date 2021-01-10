@@ -24,7 +24,7 @@ module.exports = async function textFileToJson(fileLocation) {
 			configuration.plateau = data[1].split(' ');
 		} else {
 			const [roverName, roverKey] = data[0].split(' ');
-			if (!roverName && !roverKey) {
+			if (!roverName || !roverKey) {
 				throw Error('Must be formatted <RoverName> <Landing | Instructions>:[data]');
 			}
 			let roverKeyData;
@@ -32,7 +32,7 @@ module.exports = async function textFileToJson(fileLocation) {
 			if (roverKey.toLowerCase() === 'landing') {
                 roverKeyData = data[1].split(' ');
                 if (roverKeyData.length !== 3) {
-                    throw Error('Landing data can only have 3 items')
+                    throw new Error('Landing data must have 3 fields: X Y D[N/S/E/W]')
                 }
 			} else if (roverKey.toLowerCase() === 'instructions') {
                 roverKeyData = data[1].split('');
